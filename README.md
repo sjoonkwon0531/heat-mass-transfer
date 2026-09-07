@@ -12,7 +12,8 @@ SKKU School of Chemical Engineering · Smart Process & Materials Design Lab (SPM
 | 주차 | 내용 | 상태 |
 |---|---|---|
 | **Week 1** | 열 및 물질전달 입문 — 전달현상의 유사성, 통일된 지배방정식, random walk, 열전달 3모드, 물질전달 모드 | ✅ |
-| Week 2–16 | 강의계획서 순서대로 카드 생성됨 (준비 중) | ⬜ |
+| **Week 2** | 열전도의 물리학 — Drude 자유전자 모형, 산란·Matthiessen 법칙, Wiedemann–Franz, 포논 분산관계, 기체 열전도·Knudsen, 대류·복사 맛보기 | ✅ |
+| Week 3–16 | 강의계획서 순서대로 카드 생성됨 (준비 중) | ⬜ |
 
 ## Week 1 모듈 (탭 구성)
 
@@ -24,6 +25,18 @@ SKKU School of Chemical Engineering · Smart Process & Materials Design Lab (SPM
 6. **물질전달 모드** — 이류–확산 펄스 시뮬레이션 + Peclet 수, 확산의 5가지 유형 카드
 7. **연습문제** — 8문항 (한/영, 풀이 토글)
 8. **Raw 코드** — 4주제 × 4언어(Python/MATLAB/Julia/C++) 열람·복사·다운로드
+
+## Week 2 모듈 (탭 구성)
+
+1. **개요** — 열의 세 운반자(전자·포논·기체 분자)와 열관리 응용
+2. **Drude 모형** — 전자 400개 Monte-Carlo 라이브 시뮬레이션: 혼돈 속 표류속도 v_d = aτ 수렴
+3. **산란과 온도** — 고전 √T 실패 vs 양자 보정, Matthiessen 법칙 인터랙티브 ρ(T)
+4. **Wiedemann–Franz** — 실측 금속 10종으로 κ/σ = LT 검증 (산점도 + 표)
+5. **포논 전도** — 이원자 사슬 분산관계(질량비·스프링 슬라이더), k(T) 봉우리
+6. **기체 열전도** — 압력 무관성 계산기(기체 6종), Knudsen 영역·에어로젤
+7. **대류·복사 맛보기** — h 범위 시각화, Planck 스펙트럼 인터랙티브(Wien·σT⁴)
+8. **연습문제** — 풀이 토글형 8문항
+9. **Raw 코드** — Drude MC · 포논 분산 · W–F 검증 · Planck→Stefan-Boltzmann (Python/MATLAB/Julia/C++)
 
 ## 로컬 실행
 

@@ -9,6 +9,7 @@
 // ============================================================
 import { useState } from "react";
 import Week1App from "./Week1App.jsx";
+import Week2App from "./Week2App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -38,7 +39,22 @@ const weeks = {
       color: "#f59e0b",
       ready: true,
     },
-    { id: 2,  title: "Week 2",  subtitle: "정상상태 전도",               topics: [], color: "#ef4444", ready: false },
+    {
+      id: 2,
+      title: "Week 2",
+      subtitle: "열전도의 물리학 — 전자·포논·기체",
+      topics: [
+        "열관리 응용 (전자기기 방열 · 반도체 패키징)",
+        "Drude 자유전자 모형 — v_d = −eEτ/m, σ = ne²τ/m",
+        "산란·평균자유시간 τ · Matthiessen 법칙",
+        "Wiedemann–Franz 법칙 (κ/σ = LT)",
+        "포논 전도 · 이원자 격자의 분산관계",
+        "기체 열전도의 압력 무관성 · Knudsen 영역",
+        "대류(Newton 냉각) · 복사(Planck → σT⁴) 맛보기",
+      ],
+      color: "#ef4444",
+      ready: true,
+    },
     { id: 3,  title: "Week 3",  subtitle: "비정상상태 전도",             topics: [], color: "#f97316", ready: false },
     { id: 4,  title: "Week 4",  subtitle: "대류 열전달 (PSET #1)",       topics: [], color: "#eab308", ready: false },
     { id: 5,  title: "Week 5",  subtitle: "비등과 응축",                 topics: [], color: "#84cc16", ready: false },
@@ -70,7 +86,22 @@ const weeks = {
       color: "#f59e0b",
       ready: true,
     },
-    { id: 2,  title: "Week 2",  subtitle: "Steady-state conduction",              topics: [], color: "#ef4444", ready: false },
+    {
+      id: 2,
+      title: "Week 2",
+      subtitle: "Physics of Heat Conduction — Electrons · Phonons · Gases",
+      topics: [
+        "Thermal-management applications (electronics · packaging)",
+        "Drude free-electron model — v_d = −eEτ/m, σ = ne²τ/m",
+        "Scattering & mean free time τ · Matthiessen's rule",
+        "Wiedemann–Franz law (κ/σ = LT)",
+        "Phonon conduction · diatomic-lattice dispersion",
+        "Pressure-independent gas conduction · Knudsen regime",
+        "First look at convection (Newton) & radiation (Planck → σT⁴)",
+      ],
+      color: "#ef4444",
+      ready: true,
+    },
     { id: 3,  title: "Week 3",  subtitle: "Unsteady-state conduction",            topics: [], color: "#f97316", ready: false },
     { id: 4,  title: "Week 4",  subtitle: "Convective heat transfer (PSET #1)",   topics: [], color: "#eab308", ready: false },
     { id: 5,  title: "Week 5",  subtitle: "Boiling & condensation",               topics: [], color: "#84cc16", ready: false },
@@ -90,8 +121,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App },
-  EN: { 1: Week1App },
+  KR: { 1: Week1App, 2: Week2App },
+  EN: { 1: Week1App, 2: Week2App },
 };
 
 export default function App() {
