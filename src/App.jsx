@@ -10,6 +10,7 @@
 import { useState } from "react";
 import Week1App from "./Week1App.jsx";
 import Week2App from "./Week2App.jsx";
+import Week3App from "./Week3App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -55,7 +56,20 @@ const weeks = {
       color: "#ef4444",
       ready: true,
     },
-    { id: 3,  title: "Week 3",  subtitle: "비정상상태 전도",             topics: [], color: "#f97316", ready: false },
+    {
+      id: 3,
+      title: "Week 3",
+      subtitle: "정상상태 열전도",
+      topics: [
+        "전도·대류 결합과 열저항 회로",
+        "지배방정식과 경계조건",
+        "1D 해석해와 핀(fin)",
+        "2D 변수분리법",
+        "FDM (유한차분법)",
+      ],
+      color: "#f97316",
+      ready: true,
+    },
     { id: 4,  title: "Week 4",  subtitle: "대류 열전달 (PSET #1)",       topics: [], color: "#eab308", ready: false },
     { id: 5,  title: "Week 5",  subtitle: "비등과 응축",                 topics: [], color: "#84cc16", ready: false },
     { id: 6,  title: "Week 6",  subtitle: "화학공학의 열전달 장치",       topics: [], color: "#10b981", ready: false },
@@ -102,7 +116,20 @@ const weeks = {
       color: "#ef4444",
       ready: true,
     },
-    { id: 3,  title: "Week 3",  subtitle: "Unsteady-state conduction",            topics: [], color: "#f97316", ready: false },
+    {
+      id: 3,
+      title: "Week 3",
+      subtitle: "Steady-State Heat Conduction",
+      topics: [
+        "Combined conduction & convection, thermal circuits",
+        "Governing equations & boundary conditions",
+        "1D analytical solutions & fins",
+        "2D separation of variables",
+        "FDM (finite differences)",
+      ],
+      color: "#f97316",
+      ready: true,
+    },
     { id: 4,  title: "Week 4",  subtitle: "Convective heat transfer (PSET #1)",   topics: [], color: "#eab308", ready: false },
     { id: 5,  title: "Week 5",  subtitle: "Boiling & condensation",               topics: [], color: "#84cc16", ready: false },
     { id: 6,  title: "Week 6",  subtitle: "Heat-transfer equipment in ChemE",     topics: [], color: "#10b981", ready: false },
@@ -121,8 +148,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App },
-  EN: { 1: Week1App, 2: Week2App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App },
 };
 
 export default function App() {
