@@ -11,6 +11,7 @@ import { useState } from "react";
 import Week1App from "./Week1App.jsx";
 import Week2App from "./Week2App.jsx";
 import Week3App from "./Week3App.jsx";
+import Week4App from "./Week4App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -70,7 +71,22 @@ const weeks = {
       color: "#f97316",
       ready: true,
     },
-    { id: 4,  title: "Week 4",  subtitle: "대류 열전달 (PSET #1)",       topics: [], color: "#eab308", ready: false },
+    {
+      id: 4,
+      title: "Week 4",
+      subtitle: "비정상 열전도 — 열방정식 (PSET #1)",
+      topics: [
+        "열방정식 유도와 무차원화 (r, τ, U · Fo)",
+        "PDE 분류 — 열방정식은 포물선형",
+        "발열 와이어와 Biot 수의 물리적 의미",
+        "집중용량법: θ/θ₀ = exp(−Bi·Fo)",
+        "변수분리법 · 1항 근사 · Heisler 차트",
+        "반무한체: 자기유사 erf 해 · Laplace · 적분법",
+        "명시적 FDM 행렬법 U(n+1) = D·U(n) + Δτ·q",
+      ],
+      color: "#eab308",
+      ready: true,
+    },
     { id: 5,  title: "Week 5",  subtitle: "비등과 응축",                 topics: [], color: "#84cc16", ready: false },
     { id: 6,  title: "Week 6",  subtitle: "화학공학의 열전달 장치",       topics: [], color: "#10b981", ready: false },
     { id: 7,  title: "Week 7",  subtitle: "중간고사 리뷰 & 시험",         topics: [], color: "#14b8a6", ready: false },
@@ -130,7 +146,22 @@ const weeks = {
       color: "#f97316",
       ready: true,
     },
-    { id: 4,  title: "Week 4",  subtitle: "Convective heat transfer (PSET #1)",   topics: [], color: "#eab308", ready: false },
+    {
+      id: 4,
+      title: "Week 4",
+      subtitle: "Unsteady Heat Conduction — The Heat Equation (PSET #1)",
+      topics: [
+        "Deriving & nondimensionalizing the heat equation (r, τ, U · Fo)",
+        "PDE classification — the heat equation is parabolic",
+        "Heat-generating wire & the physics of the Biot number",
+        "Lumped capacitance: θ/θ₀ = exp(−Bi·Fo)",
+        "Separation of variables · one-term approximation · Heisler charts",
+        "Semi-infinite solids: self-similar erf · Laplace · integral method",
+        "Explicit FDM matrix method U(n+1) = D·U(n) + Δτ·q",
+      ],
+      color: "#eab308",
+      ready: true,
+    },
     { id: 5,  title: "Week 5",  subtitle: "Boiling & condensation",               topics: [], color: "#84cc16", ready: false },
     { id: 6,  title: "Week 6",  subtitle: "Heat-transfer equipment in ChemE",     topics: [], color: "#10b981", ready: false },
     { id: 7,  title: "Week 7",  subtitle: "Midterm review & exam",                topics: [], color: "#14b8a6", ready: false },
@@ -148,8 +179,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App },
 };
 
 export default function App() {
