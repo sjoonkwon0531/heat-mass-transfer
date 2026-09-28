@@ -12,6 +12,7 @@ import Week1App from "./Week1App.jsx";
 import Week2App from "./Week2App.jsx";
 import Week3App from "./Week3App.jsx";
 import Week4App from "./Week4App.jsx";
+import Week5App from "./Week5App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -87,7 +88,22 @@ const weeks = {
       color: "#eab308",
       ready: true,
     },
-    { id: 5,  title: "Week 5",  subtitle: "비등과 응축",                 topics: [], color: "#84cc16", ready: false },
+    {
+      id: 5,
+      title: "Week 5",
+      subtitle: "대류 열전달",
+      topics: [
+        "운동량·열 경계층과 Prandtl 수 (δ/δt ~ Pr^⅓)",
+        "차원해석: Nu = f(Re, Pr) · 자연대류 Nu = f(Gr, Pr)",
+        "Nu와 Bi의 구분 — 분모의 k가 다르다",
+        "Blasius 자기유사 해와 슈팅법 (f″(0) = 0.332)",
+        "층류 평판: Nu_x = 0.332 Pr^⅓ √Re_x · 적분법 비교",
+        "난류 천이 (Re_crit = 5×10⁵)와 결합 상관식",
+        "관내 대류: Graetz·Nu_∞ = 3.66/4.364·Gnielinski·LMTD",
+      ],
+      color: "#84cc16",
+      ready: true,
+    },
     { id: 6,  title: "Week 6",  subtitle: "화학공학의 열전달 장치",       topics: [], color: "#10b981", ready: false },
     { id: 7,  title: "Week 7",  subtitle: "중간고사 리뷰 & 시험",         topics: [], color: "#14b8a6", ready: false },
     { id: 8,  title: "Week 8",  subtitle: "복사 열전달",                 topics: [], color: "#22d3ee", ready: false },
@@ -162,7 +178,22 @@ const weeks = {
       color: "#eab308",
       ready: true,
     },
-    { id: 5,  title: "Week 5",  subtitle: "Boiling & condensation",               topics: [], color: "#84cc16", ready: false },
+    {
+      id: 5,
+      title: "Week 5",
+      subtitle: "Convective Heat Transfer",
+      topics: [
+        "Momentum & thermal boundary layers, the Prandtl number (δ/δt ~ Pr^⅓)",
+        "Dimensional analysis: Nu = f(Re, Pr) · natural convection Nu = f(Gr, Pr)",
+        "Nu vs Bi — different k in the denominator",
+        "Blasius similarity solution & the shooting method (f″(0) = 0.332)",
+        "Laminar plate: Nu_x = 0.332 Pr^⅓ √Re_x · integral method",
+        "Turbulent transition (Re_crit = 5×10⁵) & the combined correlation",
+        "Pipe convection: Graetz · Nu_∞ = 3.66/4.364 · Gnielinski · LMTD",
+      ],
+      color: "#84cc16",
+      ready: true,
+    },
     { id: 6,  title: "Week 6",  subtitle: "Heat-transfer equipment in ChemE",     topics: [], color: "#10b981", ready: false },
     { id: 7,  title: "Week 7",  subtitle: "Midterm review & exam",                topics: [], color: "#14b8a6", ready: false },
     { id: 8,  title: "Week 8",  subtitle: "Radiative heat transfer",              topics: [], color: "#22d3ee", ready: false },
@@ -179,8 +210,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App },
 };
 
 export default function App() {
