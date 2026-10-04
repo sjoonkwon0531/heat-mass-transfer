@@ -13,6 +13,7 @@ import Week2App from "./Week2App.jsx";
 import Week3App from "./Week3App.jsx";
 import Week4App from "./Week4App.jsx";
 import Week5App from "./Week5App.jsx";
+import Week6App from "./Week6App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -104,7 +105,22 @@ const weeks = {
       color: "#84cc16",
       ready: true,
     },
-    { id: 6,  title: "Week 6",  subtitle: "화학공학의 열전달 장치",       topics: [], color: "#10b981", ready: false },
+    {
+      id: 6,
+      title: "Week 6",
+      subtitle: "해법·상변화·밀폐유동 이론",
+      topics: [
+        "유한 푸리에 변환(FFT): 기저함수·일반화 급수·Gibbs",
+        "과도 문제: 정상상태 도달 t ≈ 0.3 L²/D · 정상상태가 없는 경우",
+        "비등 곡선: Rohsenow · CHF · Leidenfrost · 막비등",
+        "Nusselt 응축막: 0.943 공식 · 원통 0.725 · n-튜브 뱅크",
+        "혼합컵 평균과 중공사 투석기 (⟨k⟩)",
+        "입구영역 Lévêque Nu ~ z^(−1/3) · 입구길이 0.1 Pe·R",
+        "Graetz 고유값 λ₁ = 2.7044 → Nu∞ = λ₁²/2 = 3.656",
+      ],
+      color: "#10b981",
+      ready: true,
+    },
     { id: 7,  title: "Week 7",  subtitle: "중간고사 리뷰 & 시험",         topics: [], color: "#14b8a6", ready: false },
     { id: 8,  title: "Week 8",  subtitle: "복사 열전달",                 topics: [], color: "#22d3ee", ready: false },
     { id: 9,  title: "Week 9",  subtitle: "물질전달의 기초",             topics: [], color: "#3b82f6", ready: false },
@@ -194,7 +210,22 @@ const weeks = {
       color: "#84cc16",
       ready: true,
     },
-    { id: 6,  title: "Week 6",  subtitle: "Heat-transfer equipment in ChemE",     topics: [], color: "#10b981", ready: false },
+    {
+      id: 6,
+      title: "Week 6",
+      subtitle: "Solution Methods · Phase Change · Confined-Flow Theory",
+      topics: [
+        "Finite Fourier transform: basis functions · generalized series · Gibbs",
+        "Transients: steady state at t ≈ 0.3 L²/D · when none exists",
+        "Boiling curve: Rohsenow · CHF · Leidenfrost · film boiling",
+        "Nusselt film condensation: 0.943 · cylinders 0.725 · n-tube banks",
+        "Mixing-cup averages & the hollow-fiber dialyzer (⟨k⟩)",
+        "Entrance region: Lévêque Nu ~ z^(−1/3) · length 0.1 Pe·R",
+        "Graetz eigenvalues λ₁ = 2.7044 → Nu∞ = λ₁²/2 = 3.656",
+      ],
+      color: "#10b981",
+      ready: true,
+    },
     { id: 7,  title: "Week 7",  subtitle: "Midterm review & exam",                topics: [], color: "#14b8a6", ready: false },
     { id: 8,  title: "Week 8",  subtitle: "Radiative heat transfer",              topics: [], color: "#22d3ee", ready: false },
     { id: 9,  title: "Week 9",  subtitle: "Fundamentals of mass transfer",        topics: [], color: "#3b82f6", ready: false },
@@ -210,8 +241,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App },
 };
 
 export default function App() {
