@@ -14,6 +14,7 @@ import Week3App from "./Week3App.jsx";
 import Week4App from "./Week4App.jsx";
 import Week5App from "./Week5App.jsx";
 import Week6App from "./Week6App.jsx";
+import Week7App from "./Week7App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -121,7 +122,20 @@ const weeks = {
       color: "#10b981",
       ready: true,
     },
-    { id: 7,  title: "Week 7",  subtitle: "중간고사 리뷰 & 시험",         topics: [], color: "#14b8a6", ready: false },
+    {
+      id: 7,
+      title: "Week 7",
+      subtitle: "중간고사 리뷰 & 시험",
+      topics: [
+        "1–6주차 개념 지도 · 무차원수 총정리 (Bi·Fo·Re·Pr·Nu·Pe·Gr·St)",
+        "공식 시트 — 공식마다 '사용 조건'까지",
+        "개념 체크 퀴즈 16문항 (즉시 해설)",
+        "2024 기출 3문제 단계별 워크스루",
+        "자주 하는 실수 8가지 · 시험 전 체크리스트",
+      ],
+      color: "#14b8a6",
+      ready: true,
+    },
     { id: 8,  title: "Week 8",  subtitle: "복사 열전달",                 topics: [], color: "#22d3ee", ready: false },
     { id: 9,  title: "Week 9",  subtitle: "물질전달의 기초",             topics: [], color: "#3b82f6", ready: false },
     { id: 10, title: "Week 10", subtitle: "정상상태 분자확산",           topics: [], color: "#6366f1", ready: false },
@@ -226,7 +240,20 @@ const weeks = {
       color: "#10b981",
       ready: true,
     },
-    { id: 7,  title: "Week 7",  subtitle: "Midterm review & exam",                topics: [], color: "#14b8a6", ready: false },
+    {
+      id: 7,
+      title: "Week 7",
+      subtitle: "Midterm Review & Exam",
+      topics: [
+        "Weeks 1–6 concept map · all dimensionless groups (Bi·Fo·Re·Pr·Nu·Pe·Gr·St)",
+        "Formula sheet — every formula with its validity condition",
+        "16-question concept quiz with instant explanations",
+        "Step-by-step walkthrough of the three 2024 exam problems",
+        "Eight common pitfalls · final pre-exam checklist",
+      ],
+      color: "#14b8a6",
+      ready: true,
+    },
     { id: 8,  title: "Week 8",  subtitle: "Radiative heat transfer",              topics: [], color: "#22d3ee", ready: false },
     { id: 9,  title: "Week 9",  subtitle: "Fundamentals of mass transfer",        topics: [], color: "#3b82f6", ready: false },
     { id: 10, title: "Week 10", subtitle: "Steady-state molecular diffusion",     topics: [], color: "#6366f1", ready: false },
@@ -241,8 +268,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App },
 };
 
 export default function App() {
