@@ -15,6 +15,7 @@ import Week4App from "./Week4App.jsx";
 import Week5App from "./Week5App.jsx";
 import Week6App from "./Week6App.jsx";
 import Week7App from "./Week7App.jsx";
+import Week8App from "./Week8App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -136,7 +137,21 @@ const weeks = {
       color: "#14b8a6",
       ready: true,
     },
-    { id: 8,  title: "Week 8",  subtitle: "복사 열전달",                 topics: [], color: "#22d3ee", ready: false },
+    {
+      id: 8,
+      title: "Week 8",
+      subtitle: "열교환기 제어 & 복사 열전달",
+      topics: [
+        "교반조 에너지 수지 → 1차계 전달함수 K/(τs+1)",
+        "FOPDT 2점 피팅: τₚ = 21.3 s, θₚ = 14.7 s",
+        "P·PI·PID 피드백 — ITAE 튜닝 (Kc = 1.234) · 피드포워드",
+        "플랑크 법칙 → σT⁴ · Wien λ_C T = 2898 μm·K",
+        "형상계수 F₁₂: 상호성·합산 법칙·차트와 공식",
+        "회색체 라디오시티 네트워크: 3표면 예제 (328 → 131 kW)",
+      ],
+      color: "#22d3ee",
+      ready: true,
+    },
     { id: 9,  title: "Week 9",  subtitle: "물질전달의 기초",             topics: [], color: "#3b82f6", ready: false },
     { id: 10, title: "Week 10", subtitle: "정상상태 분자확산",           topics: [], color: "#6366f1", ready: false },
     { id: 11, title: "Week 11", subtitle: "비정상상태 분자확산 (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
@@ -254,7 +269,21 @@ const weeks = {
       color: "#14b8a6",
       ready: true,
     },
-    { id: 8,  title: "Week 8",  subtitle: "Radiative heat transfer",              topics: [], color: "#22d3ee", ready: false },
+    {
+      id: 8,
+      title: "Week 8",
+      subtitle: "Heat-Exchanger Control & Radiative Heat Transfer",
+      topics: [
+        "Stirred-tank energy balance → first-order transfer function K/(τs+1)",
+        "FOPDT two-point fit: τₚ = 21.3 s, θₚ = 14.7 s",
+        "P · PI · PID feedback — ITAE tuning (Kc = 1.234) · feedforward",
+        "Planck's law → σT⁴ · Wien λ_C T = 2898 μm·K",
+        "View factor F₁₂: reciprocity · summation rule · charts & formulas",
+        "Gray-surface radiosity networks: 3-surface example (328 → 131 kW)",
+      ],
+      color: "#22d3ee",
+      ready: true,
+    },
     { id: 9,  title: "Week 9",  subtitle: "Fundamentals of mass transfer",        topics: [], color: "#3b82f6", ready: false },
     { id: 10, title: "Week 10", subtitle: "Steady-state molecular diffusion",     topics: [], color: "#6366f1", ready: false },
     { id: 11, title: "Week 11", subtitle: "Unsteady molecular diffusion (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
@@ -268,8 +297,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App },
 };
 
 export default function App() {
