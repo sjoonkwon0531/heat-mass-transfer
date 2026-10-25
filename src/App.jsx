@@ -16,6 +16,7 @@ import Week5App from "./Week5App.jsx";
 import Week6App from "./Week6App.jsx";
 import Week7App from "./Week7App.jsx";
 import Week8App from "./Week8App.jsx";
+import Week9App from "./Week9App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -152,7 +153,23 @@ const weeks = {
       color: "#22d3ee",
       ready: true,
     },
-    { id: 9,  title: "Week 9",  subtitle: "물질전달의 기초",             topics: [], color: "#3b82f6", ready: false },
+    {
+      id: 9,
+      title: "Week 9",
+      subtitle: "물질전달의 기초",
+      topics: [
+        "농도·기준속도와 플럭스: N_A = −cD∇y_A + y_A(N_A + N_B)",
+        "화학 퍼텐셜과 Nernst–Einstein — 확산의 진짜 구동력",
+        "기체 D: Lennard-Jones · Chapman–Enskog(Ω_D) · Fuller",
+        "액체 D: Stokes–Einstein · Wilke–Chang",
+        "세공 확산: Knudsen D_K ∝ T^½ · 전이 영역 · Monte Carlo 다공체",
+        "고체 확산: D = D₀exp(−Q/RT) · erf 확산쌍 · 도핑",
+        "Langevin 방정식: ⟨x²⟩ 탄도→확산, D = k_BT/(mγ)",
+        "화학종 연속방정식 · Raoult/Henry 경계조건 · W CVD 막",
+      ],
+      color: "#3b82f6",
+      ready: true,
+    },
     { id: 10, title: "Week 10", subtitle: "정상상태 분자확산",           topics: [], color: "#6366f1", ready: false },
     { id: 11, title: "Week 11", subtitle: "비정상상태 분자확산 (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
     { id: 12, title: "Week 12", subtitle: "대류 물질전달",               topics: [], color: "#a78bfa", ready: false },
@@ -284,7 +301,23 @@ const weeks = {
       color: "#22d3ee",
       ready: true,
     },
-    { id: 9,  title: "Week 9",  subtitle: "Fundamentals of mass transfer",        topics: [], color: "#3b82f6", ready: false },
+    {
+      id: 9,
+      title: "Week 9",
+      subtitle: "Fundamentals of mass transfer",
+      topics: [
+        "Concentrations, reference velocities & fluxes: N_A = −cD∇y_A + y_A(N_A + N_B)",
+        "Chemical potential & Nernst–Einstein — the true driving force",
+        "Gas D: Lennard-Jones · Chapman–Enskog (Ω_D) · Fuller",
+        "Liquid D: Stokes–Einstein · Wilke–Chang",
+        "Pore diffusion: Knudsen D_K ∝ T^½ · transition · Monte Carlo porous solid",
+        "Solid diffusion: D = D₀exp(−Q/RT) · erf diffusion couple · doping",
+        "Langevin equation: ⟨x²⟩ ballistic→diffusive, D = k_BT/(mγ)",
+        "Species continuity · Raoult/Henry boundary conditions · W CVD film",
+      ],
+      color: "#3b82f6",
+      ready: true,
+    },
     { id: 10, title: "Week 10", subtitle: "Steady-state molecular diffusion",     topics: [], color: "#6366f1", ready: false },
     { id: 11, title: "Week 11", subtitle: "Unsteady molecular diffusion (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
     { id: 12, title: "Week 12", subtitle: "Convective mass transfer",             topics: [], color: "#a78bfa", ready: false },
@@ -297,8 +330,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App },
 };
 
 export default function App() {
