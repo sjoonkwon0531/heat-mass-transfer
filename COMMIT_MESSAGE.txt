@@ -1,10 +1,14 @@
-Week 9: Fundamentals of mass transfer (interactive module)
+Week 10: Steady-state molecular diffusion (interactive module)
 
-- Week9App.jsx: 10 tabs (overview, fluxes & reference velocities, gas D
-  (Lennard-Jones, Chapman-Enskog with Omega_D, Fuller), liquid D (Stokes-Einstein,
-  Wilke-Chang), pore diffusion (Knudsen transition + Monte Carlo porous lattice),
-  solid diffusion (Arrhenius table, erf diffusion couple), random walk & Langevin
-  (MSD ballistic->diffusive, VACF), species continuity & BCs (Raoult/Henry,
-  Henry-table calculator, W CVD film with Damkohler number), practice, code)
-- Week9Codes.js + code_files/week9: 4 topics x 4 languages (16 files)
-- App.jsx: import, KR/EN Week 9 cards (ready: true), comps registry
+- Week10App.jsx: 13 tabs (overview, Stefan tube & film model, Arnold-cell
+  pseudo-steady D measurement, Si oxidation (linear-parabolic + Deal-Grove
+  constants), carbon-particle burnout & Damkohler number, reacting liquid film
+  (Hatta / enhancement factor, CO2-NaOH case), CVD Grove model + step coverage +
+  ALD, dopant diffusion (erfc/Gaussian, junction depth, implantation), 2D Laplace
+  series (Gibbs), TEOS wafer-gap 2D SOR vs thin-gap Bessel model, condensation
+  with a noncondensable gas (interface T2 by bisection), practice, code)
+- Week10Codes.js + code_files/week10: 4 topics x 4 languages (16 files)
+- App.jsx: import, KR/EN Week 10 cards (ready: true), comps registry
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01NU1stAf6mmkqjPEoBpw4Zt
