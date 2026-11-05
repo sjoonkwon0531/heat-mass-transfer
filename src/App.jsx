@@ -18,6 +18,7 @@ import Week7App from "./Week7App.jsx";
 import Week8App from "./Week8App.jsx";
 import Week9App from "./Week9App.jsx";
 import Week10App from "./Week10App.jsx";
+import Week11App from "./Week11App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -172,7 +173,7 @@ const weeks = {
       ready: true,
     },
     { id: 10, title: "Week 10", subtitle: "정상상태 분자확산",           topics: ["Stefan 관·로그 평균", "Si 산화·탄소 연소 (유사 정상)", "반응 액막 Hatta·CVD Grove 모델", "도펀트 확산·2D Laplace·TEOS 웨이퍼", "비응축 기체 속 응축"], color: "#6366f1", ready: true },
-    { id: 11, title: "Week 11", subtitle: "비정상상태 분자확산 (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
+    { id: 11, title: "Week 11", subtitle: "비정상상태 분자확산 (PSET #2)", topics: ["반무한 매질·erfc·Si 도핑 깊이", "평판·구의 고유함수 전개 (약물 방출)", "Sturm–Liouville 이론과 직교성", "Bessel 함수·전열선 유한 Fourier 변환", "반응 구(촉매 유효 인자)·Legendre·Maxwell"], color: "#8b5cf6", ready: true },
     { id: 12, title: "Week 12", subtitle: "대류 물질전달",               topics: [], color: "#a78bfa", ready: false },
     { id: 13, title: "Week 13", subtitle: "전도·확산 문제의 해법",        topics: [], color: "#d946ef", ready: false },
     { id: 14, title: "Week 14", subtitle: "심화 1 — 다상 전달 · 반도체 공정", topics: [], color: "#f472b6", ready: false },
@@ -320,7 +321,7 @@ const weeks = {
       ready: true,
     },
     { id: 10, title: "Week 10", subtitle: "Steady-state molecular diffusion",     topics: ["Stefan tube & log mean", "Si oxidation & carbon burnout (pseudo-steady)", "Reacting film (Hatta) & Grove CVD model", "Dopant diffusion, 2D Laplace & TEOS wafers", "Condensation with a noncondensable gas"], color: "#6366f1", ready: true },
-    { id: 11, title: "Week 11", subtitle: "Unsteady molecular diffusion (PSET #2)", topics: [], color: "#8b5cf6", ready: false },
+    { id: 11, title: "Week 11", subtitle: "Unsteady molecular diffusion (PSET #2)", topics: ["Semi-infinite media, erfc & Si doping depth", "Eigenfunction expansions in slabs & spheres (drug release)", "Sturm–Liouville theory & orthogonality", "Bessel functions & the heated wire (finite Fourier transform)", "Reacting sphere (effectiveness factor), Legendre & Maxwell"], color: "#8b5cf6", ready: true },
     { id: 12, title: "Week 12", subtitle: "Convective mass transfer",             topics: [], color: "#a78bfa", ready: false },
     { id: 13, title: "Week 13", subtitle: "Solution methods for conduction & diffusion", topics: [], color: "#d946ef", ready: false },
     { id: 14, title: "Week 14", subtitle: "Advanced 1 — Multiphase · semiconductor processes", topics: [], color: "#f472b6", ready: false },
@@ -331,8 +332,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App },
 };
 
 export default function App() {
