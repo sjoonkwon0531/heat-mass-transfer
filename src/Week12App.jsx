@@ -717,8 +717,8 @@ function TabIntegral({ t }) {
             </Readout>
             <Note>
               {t(
-                "3차 분포를 끝까지 계산하면 계수는 0.323–0.331로, 엄밀해 0.332와 1–3% 차이입니다. 강의 슬라이드는 적분법 결과를 0.36(8% 오차)으로 적었는데, 같은 가정으로는 0.36이 재현되지 않아 확인이 필요합니다.",
-                "Carrying the cubic through gives 0.323–0.331, within 1–3% of the exact 0.332. The lecture slide states 0.36 (8% error) for the integral method; that value is not reproduced under the same assumptions and is worth checking."
+                "3차 분포를 끝까지 계산하면 계수는 0.323–0.331로, 엄밀해 0.332와 1–3% 차이입니다. 강의 슬라이드의 0.36(8% 오차)은 2차 분포 2(y/δ) − (y/δ)²로 계산한 값(Sc = 1에서 0.365)과 맞습니다. 3차 분포는 벽 곡률 조건을 하나 더 만족해 더 정확합니다.",
+                "Carrying the cubic through gives 0.323–0.331, within 1–3% of the exact 0.332. The lecture's 0.36 (8% error) matches a quadratic profile 2(y/δ) − (y/δ)² (0.365 at Sc = 1); the cubic satisfies one more wall condition and is more accurate."
               )}
             </Note>
           </div>
