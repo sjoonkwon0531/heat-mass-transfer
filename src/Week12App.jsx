@@ -431,7 +431,7 @@ function TabOverview({ t }) {
             "The fluid is at rest on the surface (no slip), so material leaves the surface only by diffusion. The surface flux can therefore be written two ways:"
           )}
         </P>
-        <Eq block>k_c (c_As − c_A∞) = −D_AB ∂c_A/∂y |_(y=0) &nbsp;⇒&nbsp; Sh = k_c L / D_AB = −∂[(c_A − c_As)/(c_A∞ − c_As)]/∂(y/L) |₀</Eq>
+        <Eq block>k_c (c_As − c_A∞) = −D_AB ∂c_A/∂y |_(y=0) &nbsp;⇒&nbsp; Sh = k_c L / D_AB = ∂[(c_A − c_As)/(c_A∞ − c_As)]/∂(y/L) |₀</Eq>
         <P>
           {t(
             "Sh는 표면의 무차원 농도 기울기입니다. 동시에 '순수 확산 저항 L/D'를 '대류 저항 1/k_c'로 나눈 값이기도 합니다. 강제대류에서는 Sh = f(Re, Sc), 자연대류에서는 Sh = f(Gr, Sc)입니다.",
