@@ -20,6 +20,7 @@ import Week9App from "./Week9App.jsx";
 import Week10App from "./Week10App.jsx";
 import Week11App from "./Week11App.jsx";
 import Week12App from "./Week12App.jsx";
+import Week13App from "./Week13App.jsx";
 
 const C = {
   bg: "#0b0f17",
@@ -176,7 +177,7 @@ const weeks = {
     { id: 10, title: "Week 10", subtitle: "정상상태 분자확산",           topics: ["Stefan 관·로그 평균", "Si 산화·탄소 연소 (유사 정상)", "반응 액막 Hatta·CVD Grove 모델", "도펀트 확산·2D Laplace·TEOS 웨이퍼", "비응축 기체 속 응축"], color: "#6366f1", ready: true },
     { id: 11, title: "Week 11", subtitle: "비정상상태 분자확산 (PSET #2)", topics: ["반무한 매질·erfc·Si 도핑 깊이", "평판·구의 고유함수 전개 (약물 방출)", "Sturm–Liouville 이론과 직교성", "Bessel 함수·전열선 유한 Fourier 변환", "반응 구(촉매 유효 인자)·Legendre·Maxwell"], color: "#8b5cf6", ready: true },
     { id: 12, title: "Week 12", subtitle: "대류 물질전달",               topics: ["무차원수·Sherwood 수·Blasius 해", "농도 경계층 (Pohlhausen)·적분 방법", "난류·혼합 길이·와확산", "Reynolds·Prandtl·von Kármán·Chilton–Colburn 유사성", "k_c 모델·습구 온도·Lewis 수"], color: "#a78bfa", ready: true },
-    { id: 13, title: "Week 13", subtitle: "전도·확산 문제의 해법",        topics: [], color: "#d946ef", ready: false },
+    { id: 13, title: "Week 13", subtitle: "물질전달 상관식과 상간 물질전달",        topics: ["평판 상관식·입구 효과·CVD 예제", "크리핑 흐름·Stokes 항력·구의 Sh(Pe)", "관과 충전층의 상관식", "상평형·이중 경막 이론", "충전탑 설계 (HTU × NTU)"], color: "#d946ef", ready: true },
     { id: 14, title: "Week 14", subtitle: "심화 1 — 다상 전달 · 반도체 공정", topics: [], color: "#f472b6", ready: false },
     { id: 15, title: "Week 15", subtitle: "심화 2 — 패턴 형성 · 상분리",  topics: [], color: "#fb7185", ready: false },
     { id: 16, title: "Week 16", subtitle: "기말 리뷰 & 시험 (Term Paper)", topics: [], color: "#94a3b8", ready: false },
@@ -324,7 +325,7 @@ const weeks = {
     { id: 10, title: "Week 10", subtitle: "Steady-state molecular diffusion",     topics: ["Stefan tube & log mean", "Si oxidation & carbon burnout (pseudo-steady)", "Reacting film (Hatta) & Grove CVD model", "Dopant diffusion, 2D Laplace & TEOS wafers", "Condensation with a noncondensable gas"], color: "#6366f1", ready: true },
     { id: 11, title: "Week 11", subtitle: "Unsteady molecular diffusion (PSET #2)", topics: ["Semi-infinite media, erfc & Si doping depth", "Eigenfunction expansions in slabs & spheres (drug release)", "Sturm–Liouville theory & orthogonality", "Bessel functions & the heated wire (finite Fourier transform)", "Reacting sphere (effectiveness factor), Legendre & Maxwell"], color: "#8b5cf6", ready: true },
     { id: 12, title: "Week 12", subtitle: "Convective mass transfer",             topics: ["Dimensionless groups, Sherwood number & Blasius", "Concentration boundary layer (Pohlhausen) & integral method", "Turbulence, mixing length & eddy diffusivity", "Reynolds, Prandtl, von Kármán & Chilton–Colburn analogies", "k_c models, wet-bulb temperature & Lewis number"], color: "#a78bfa", ready: true },
-    { id: 13, title: "Week 13", subtitle: "Solution methods for conduction & diffusion", topics: [], color: "#d946ef", ready: false },
+    { id: 13, title: "Week 13", subtitle: "Mass-transfer correlations & interphase transfer", topics: ["Flat-plate correlations, entrance effect & CVD example", "Creeping flow, Stokes drag & Sh(Pe) for spheres", "Pipe and packed-bed correlations", "Phase equilibrium & two-resistance theory", "Packed-tower design (HTU × NTU)"], color: "#d946ef", ready: true },
     { id: 14, title: "Week 14", subtitle: "Advanced 1 — Multiphase · semiconductor processes", topics: [], color: "#f472b6", ready: false },
     { id: 15, title: "Week 15", subtitle: "Advanced 2 — Pattern formation · phase separation", topics: [], color: "#fb7185", ready: false },
     { id: 16, title: "Week 16", subtitle: "Final review & exam (Term Paper due)", topics: [], color: "#94a3b8", ready: false },
@@ -333,8 +334,8 @@ const weeks = {
 
 // ── Component registry ───────────────────────────────────────
 const comps = {
-  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App, 12: Week12App },
-  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App, 12: Week12App },
+  KR: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App, 12: Week12App, 13: Week13App },
+  EN: { 1: Week1App, 2: Week2App, 3: Week3App, 4: Week4App, 5: Week5App, 6: Week6App, 7: Week7App, 8: Week8App, 9: Week9App, 10: Week10App, 11: Week11App, 12: Week12App, 13: Week13App },
 };
 
 export default function App() {
