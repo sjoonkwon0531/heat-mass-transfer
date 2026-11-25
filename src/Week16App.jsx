@@ -467,8 +467,8 @@ function TabOverview({ t, lang }) {
       <Panel title={t("16주차: 8–14주차 기말 리뷰", "Week 16: final review of Weeks 8–14")}>
         <P>
           {t(
-            "이 모듈은 기말고사 범위(8–14주차)를 한곳에 모았습니다. 주차별 탭에는 꼭 외울 식과 가정, 그리고 바로 숫자를 넣어 볼 수 있는 계산기가 있습니다. '연습문제' 탭에는 22개의 시험형 예제가 있고, 풀이는 버튼을 눌러야 보입니다. 먼저 스스로 풀어 보세요.",
-            "This module gathers the final-exam scope (Weeks 8–14) in one place. Each week's tab lists the equations and assumptions to know plus a calculator for trying numbers. The Practice tab holds 22 exam-style problems whose solutions open only on request, so try them first."
+            "이 모듈은 기말고사 범위(8–14주차)를 한곳에 모았습니다. 주차별 탭에는 꼭 외울 식과 가정, 그리고 바로 숫자를 넣어 볼 수 있는 계산기가 있습니다. '연습문제' 탭에는 18개의 시험형 예제가 있고, 풀이는 버튼을 눌러야 보입니다. 먼저 스스로 풀어 보세요.",
+            "This module gathers the final-exam scope (Weeks 8–14) in one place. Each week's tab lists the equations and assumptions to know plus a calculator for trying numbers. The Practice tab holds 18 exam-style problems whose solutions open only on request, so try them first."
           )}
         </P>
         <Table head={[t("주차", "Week"), t("핵심 내용", "Core content")]} rows={weeks} />
@@ -494,7 +494,7 @@ function TabPracticeAll({ t, lang }) {
   const shown = (wk === "all" ? groups : [wk]).flatMap((g) => pick(S, g).filter(isExample));
   return (
     <div>
-      <Panel title={t("시험형 연습문제 22개", "22 exam-style problems")}>
+      <Panel title={t("시험형 연습문제 18개", "18 exam-style problems")}>
         <P>{t("주차를 골라 볼 수 있습니다. 모든 숫자는 코드로 다시 계산해 확인했습니다.", "Filter by week. Every number was recomputed in code.")}</P>
         <Seg value={wk} onChange={setWk}
           options={[{ v: "all", label: t("전체", "All") }].concat(groups.map((g) => ({ v: g, label: t(`${g.slice(1)}주차`, `Wk ${g.slice(1)}`) })))} />
@@ -951,8 +951,8 @@ export default function Week16App({ lang: langProp, language, onBack, onLangChan
                 {t("기말 리뷰: 8–14주차", "Final-Exam Review: Weeks 8–14")}
               </h1>
               <div style={{ fontSize: 13, opacity: 0.8 }}>
-                {t("주차별 핵심 식·가정 · 계산기 · 문제 유형 판별표 · 공식 시트 · 시험형 연습문제 22개 · 자가 점검",
-                   "Key equations and assumptions by week · calculators · problem-type tables · formula sheet · 22 exam-style problems · self-check")}
+                {t("주차별 핵심 식·가정 · 계산기 · 문제 유형 판별표 · 공식 시트 · 시험형 연습문제 18개 · 자가 점검",
+                   "Key equations and assumptions by week · calculators · problem-type tables · formula sheet · 18 exam-style problems · self-check")}
               </div>
             </div>
             <Seg
