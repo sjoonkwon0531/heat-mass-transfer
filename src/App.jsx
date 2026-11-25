@@ -183,7 +183,7 @@ const weeks = {
     { id: 13, title: "Week 13", subtitle: "물질전달 상관식과 상간 물질전달",        topics: ["평판 상관식·입구 효과·CVD 예제", "크리핑 흐름·Stokes 항력·구의 Sh(Pe)", "관과 충전층의 상관식", "상평형·이중 경막 이론", "충전탑 설계 (HTU × NTU)"], color: "#d946ef", ready: true },
     { id: 14, title: "Week 14", subtitle: "결합 플럭스 · 다성분 확산 · 반응공학의 물질전달", topics: ["Onsager 상반 관계·Soret/Dufour 효과", "다성분 에너지 수지·물방울 증발(d² 법칙)", "Stefan–Maxwell 식·열역학 인자", "외부 막 물질전달·충전층 반응기", "Thiele 계수와 유효 인자"], color: "#f472b6", ready: true },
     { id: 15, title: "Week 15", subtitle: "불안정성과 상분리에 의한 무늬 형성", topics: ["선형 안정성과 T–Δ 평면", "Turing 불안정성과 분산 관계", "Gray–Scott·Lengyel–Epstein·Gierer–Meinhardt 시뮬레이터", "격자 기체 모델·바이노달·스피노달", "Cahn–Hilliard·Allen–Cahn 식과 상분리 시뮬레이터"], color: "#fb7185", ready: true },
-    { id: 16, title: "Week 16", subtitle: "기말 리뷰: 8–14주차 (Term Paper 제출)", topics: ["주차별 핵심 식·가정과 계산기", "문제 유형 판별표와 자주 하는 실수", "공식 시트", "시험형 연습문제 22개 (단계별 풀이)", "자가 점검 문제"], color: "#94a3b8", ready: true },
+    { id: 16, title: "Week 16", subtitle: "기말 리뷰: 8–14주차 (Term Paper 제출)", topics: ["주차별 핵심 식·가정과 계산기", "문제 유형 판별표와 자주 하는 실수", "공식 시트", "시험형 연습문제 18개 (단계별 풀이)", "자가 점검 문제"], color: "#94a3b8", ready: true },
   ],
   EN: [
     {
@@ -331,7 +331,7 @@ const weeks = {
     { id: 13, title: "Week 13", subtitle: "Mass-transfer correlations & interphase transfer", topics: ["Flat-plate correlations, entrance effect & CVD example", "Creeping flow, Stokes drag & Sh(Pe) for spheres", "Pipe and packed-bed correlations", "Phase equilibrium & two-resistance theory", "Packed-tower design (HTU × NTU)"], color: "#d946ef", ready: true },
     { id: 14, title: "Week 14", subtitle: "Coupled fluxes, multicomponent diffusion & reaction engineering", topics: ["Onsager reciprocity, Soret & Dufour effects", "Multicomponent energy balance & droplet evaporation (d² law)", "Stefan–Maxwell equations & the thermodynamic factor", "External-film transfer & packed-bed reactors", "Thiele modulus & effectiveness factor"], color: "#f472b6", ready: true },
     { id: 15, title: "Week 15", subtitle: "Pattern formation by instability & phase separation", topics: ["Linear stability & the T–Δ plane", "Turing instability & dispersion relation", "Gray–Scott, Lengyel–Epstein & Gierer–Meinhardt simulator", "Lattice-gas model, binodal & spinodal", "Cahn–Hilliard & Allen–Cahn equations with a phase-separation simulator"], color: "#fb7185", ready: true },
-    { id: 16, title: "Week 16", subtitle: "Final review: Weeks 8–14 (Term Paper due)", topics: ["Key equations, assumptions and calculators by week", "Problem-type tables and common mistakes", "Formula sheet", "22 exam-style problems with step-by-step solutions", "Self-check questions"], color: "#94a3b8", ready: true },
+    { id: 16, title: "Week 16", subtitle: "Final review: Weeks 8–14 (Term Paper due)", topics: ["Key equations, assumptions and calculators by week", "Problem-type tables and common mistakes", "Formula sheet", "18 exam-style problems with step-by-step solutions", "Self-check questions"], color: "#94a3b8", ready: true },
   ],
 };
 
